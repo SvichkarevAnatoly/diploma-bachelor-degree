@@ -9,7 +9,7 @@ all: diploma.pdf
 	./dat2tex $< > $@
 
 diploma.pdf: diploma.tex
-	latexmk -pdf -pdflatex="xelatex" -use-make diploma.tex
+	latexmk -bibtex -pdf -pdflatex="xelatex" -use-make diploma.tex
  
 clean:
-	latexmk -CA
+	latexmk -bibtex -CA
