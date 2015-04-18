@@ -101,24 +101,6 @@
 \define@key[ru]{mytitle}{city}{\def\my@title@city@ru{#1}}
 \define@choicekey*[ru]{mytitle}{type}{diploma,coursework,master,bachelor}{\def\my@title@type@ru{#1}}
 
-%% Англоязычный вариант
-\define@key[en]{mytitle}{university}{\def\my@title@university@en{#1}}
-\define@key[en]{mytitle}{faculty}{\def\my@title@faculty@en{#1}}
-\define@key[en]{mytitle}{chair}{\def\my@title@chair@en{#1}}
-\define@key[en]{mytitle}{title}{\def\my@title@title@en{#1}}
-\define@key[en]{mytitle}{position}{\def\my@title@position@en{#1}}
-\define@key[en]{mytitle}{group}{\def\my@title@group@en{#1}}
-\define@key[en]{mytitle}{author}{\def\my@title@author@en{#1}}
-\define@key[en]{mytitle}{supervisor}{\def\my@title@supervisor@en{#1}}
-\define@key[en]{mytitle}{supervisorPosition}{\def\my@title@supervisorPosition@en{#1}}
-\define@key[en]{mytitle}{reviewer}{\def\my@title@reviewer@en{#1}}
-\define@key[en]{mytitle}{reviewerPosition}{\def\my@title@reviewerPosition@en{#1}}
-\define@key[en]{mytitle}{chairHead}{\def\my@title@chairHead@en{#1}}
-\define@key[en]{mytitle}{chairHeadPosition}{\def\my@title@chairHeadPosition@en{#1}}
-\define@key[en]{mytitle}{year}{\def\my@title@year@en{#1}}
-\define@key[en]{mytitle}{city}{\def\my@title@city@en{#1}}
-\define@choicekey*[en]{mytitle}{type}{diploma,coursework,master,bachelor}{\def\my@title@type@en{#1}}
-
 \newcommand\filltitle[2]{
 %% Значения по умолчанию для обоих языков
     \ifthenelse{\equal{#1}{ru}}
@@ -196,60 +178,6 @@
     \my@title@reviewerPosition@ru\ \my@title@reviewer@ru
     }
 \end{center}
-\end{titlepage}
-}
-
-%% Титульная страница на английском языке
-\newcommand\maketitleen{
-\fancypagestyle{titleen}{
-    \fancyhf{}  % clear all header and footer fields
-    \renewcommand{\headrulewidth}{0pt}  % remove head ruler
-    %% В верхнем колонтитуле будет университет и кафедра
-    \chead{\large \my@title@university@en \\ \my@title@faculty@en \\ \vskip 1em{\large \my@title@chair@en \\}}
-    %% В нижнем колонтитуле город и год
-    \cfoot{\large\parbox[b]{\textwidth}{\centering \my@title@city@en\\ \my@title@year@en}}
-}
-\title{\my@title@title@en}
-\begin{titlepage}%
-\newgeometry{top=20mm,bottom=20mm,left=20mm,right=15mm,nohead,includeheadfoot}
-\thispagestyle{titleen}
-  \begin{center}
-    \vspace*{0.25\textheight}
-    {\Large\my@title@author@en\\}
-    
-    \vskip 2em
-    {\Huge \@title \\}
-    
-    \vskip 1em
-    {\large 
-    \ifthenelse{\equal{\my@title@type@en}{coursework}}
-    {Course Work}
-    {\ifthenelse{\equal{\my@title@type@en}{diploma}}
-    {Graduation Thesis}
-    {\ifthenelse{\equal{\my@title@type@en}{master}}
-    {Master's Thesis}
-    {\ifthenelse{\equal{\my@title@type@en}{bachelor}}
-    {Bachelor's Thesis}
-    }}}
-    \\}
-    \vskip 2em
-    \ifthenelse{\equal{\my@title@type@en}{coursework}}
-    {\normalsize \raggedleft 
-    Scientific supervisor:\\
-    \my@title@supervisorPosition@en\ \my@title@supervisor@en
-    }
-    {\normalsize \raggedleft 
-    Admitted for defence.\\
-    Head of the chair:\\
-    \my@title@chairHeadPosition@en\ \my@title@chairHead@en\sigspace
-
-    Scientific supervisor:\\
-    \my@title@supervisorPosition@en\ \my@title@supervisor@en\sigspace
-
-    Reviewer:\\
-    \my@title@reviewerPosition@en\ \my@title@reviewer@en
-    }
-  \end{center}
 \end{titlepage}
 }
 
