@@ -2,4 +2,4 @@ all:
 	xelatex diploma.tex
 
 clean:
-	rm *.aux *.log *.out *.toc
+	rm -f *.aux *.log *.out *.toc
