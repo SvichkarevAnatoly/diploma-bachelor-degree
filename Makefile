@@ -1,5 +1,15 @@
-all:
-	xelatex diploma.tex
+.PHONY: diploma.pdf all clean
 
+all: diploma.pdf
+
+%.tex: %.raw
+	./raw2tex $< > $@
+ 
+%.tex: %.dat
+	./dat2tex $< > $@
+
+diploma.pdf: diploma.tex
+	latexmk -pdf -pdflatex="xelatex" -use-make diploma.tex
+ 
 clean:
-	rm -f *.aux *.log *.out *.toc
+	latexmk -CA
