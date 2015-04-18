@@ -1,5 +1,4 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{matmex-diploma-custom}[2013/04/12 MatMex LaTeX diploma class]
 \def\my@fontsize{12pt}\def\my@baseclass{article}\def\my@title12pt{}\def\my@body14pt{}
 
 % Если используется опция 14pt то нужно несколько хаков
