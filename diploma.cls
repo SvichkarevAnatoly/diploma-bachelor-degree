@@ -101,29 +101,6 @@
 \define@choicekey*[ru]{mytitle}{type}{diploma,coursework,master,bachelor}{\def\my@title@type@ru{#1}}
 
 \newcommand\filltitle[2]{
-%% Значения по умолчанию для обоих языков
-    \ifthenelse{\equal{#1}{ru}}
-        {
-        \presetkeys[#1]{mytitle}{
-          university = {САНКТ-ПЕТЕРБУРГСКИЙ ГОСУДАРСТВЕННЫЙ УНИВЕРСИТЕТ},
-          faculty = {Математико-механический факультет},
-          city = {Санкт-Петербург},
-          year = {\the\year},
-          type = {diploma}
-        }{}
-        }
-        {}
-    \ifthenelse{\equal{#1}{en}}
-        {
-        \presetkeys[#1]{mytitle}{
-          university = {SAINT-PETERSBURG STATE UNIVERSITY},
-          faculty = {Mathematics \& Mechanics Faculty},
-          city = {Saint-Petersburg},
-          year = {\the\year},
-          type = {diploma}
-        }{}
-        }
-        {}
     \setkeys[#1]{mytitle}{#2}
 }
 
