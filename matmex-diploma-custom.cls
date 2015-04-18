@@ -52,7 +52,7 @@
 %% выбрать Unicode шрифт в котором есть кириллические глифы. Ниже
 %% основным шрифтом выбирается Unicode версия шрифта Computer Modern с заcечками
 \usepackage{fontspec}
-\setmainfont[Mapping=tex-text]{CMU Serif}
+\setmainfont[Mapping=tex-text]{FreeSerif}
 
 %% В XeLaTex заменой известного пакета babel является пакет polyglossia.
 %% Теперь у нас будут переносы слов
