@@ -3,4 +3,6 @@
 *.gz
 *.out
 *.toc
+*.fdb_latexmk
+*.fls
 diploma.pdf
