@@ -127,15 +127,15 @@
 \thispagestyle{titleru}
 \begin{center}
     \vspace*{0.3\textheight}
+    \large
+    ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ БАКАЛАВРСКАЯ РАБОТА
+    \\
+    
+    \vskip 1em
     {\Large\my@title@author@ru}
     
     \vskip 2em
     {\Large \@title \\}
-    
-    \vskip 1em
-    \large
-    ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ БАКАЛАВРСКАЯ РАБОТА
-    \\
     
     \vskip 5em
     \noindent\begin{minipage}[b]{0.49\hsize}
