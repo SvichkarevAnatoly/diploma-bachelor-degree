@@ -1,2 +1,2 @@
 # diploma-bachelor-degree
-Мой диплом
+to create *.pdf run `make`
