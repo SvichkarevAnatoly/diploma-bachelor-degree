@@ -85,6 +85,7 @@
 \define@key[ru]{mytitle}{university}{\def\my@title@university@ru{#1}}
 \define@key[ru]{mytitle}{faculty}{\def\my@title@faculty@ru{#1}}
 \define@key[ru]{mytitle}{chair}{\def\my@title@chair@ru{#1}}
+\define@key[ru]{mytitle}{direction}{\def\my@title@direction@ru{#1}}
 \define@key[ru]{mytitle}{author}{\def\my@title@author@ru{#1}}
 \define@key[ru]{mytitle}{title}{\def\my@title@title@ru{#1}}
 \define@key[ru]{mytitle}{chairHead}{\def\my@title@chairHead@ru{#1}}
@@ -104,7 +105,7 @@
     \fancyhf{}  % clear all header and footer fields
     \renewcommand{\headrulewidth}{0pt}  % remove head ruler
     %% В верхнем колонтитуле будет университет и кафедра
-    \chead{\large \my@title@university@ru \\ \my@title@faculty@ru \\ \vskip 1em{\large \my@title@chair@ru \\}}
+    \chead{\large \my@title@university@ru \\ \vskip 1em{\my@title@faculty@ru \\} \vskip 1em{\large \my@title@chair@ru \\} Направление подготовки: \my@title@direction@ru}
     %% В нижнем колонтитуле город и год
     \cfoot{\large\parbox[b]{\textwidth}{\centering \my@title@city@ru\\ \my@title@year@ru}}
 }
