@@ -105,9 +105,20 @@
     \fancyhf{}  % clear all header and footer fields
     \renewcommand{\headrulewidth}{0pt}  % remove head ruler
     %% В верхнем колонтитуле будет университет и кафедра
-    \chead{\large \my@title@university@ru \\ \vskip 1em{\my@title@faculty@ru \\} \vskip 1em{\large \my@title@chair@ru \\} Направление подготовки: \my@title@direction@ru}
+    \chead{
+        \large \my@title@university@ru \\
+        \vskip 1em{\my@title@faculty@ru \\}
+        \vskip 1em{\large \my@title@chair@ru \\}
+        \vskip 1em{Направление подготовки: \my@title@direction@ru}
+    }
     %% В нижнем колонтитуле город и год
-    \cfoot{\large\parbox[b]{\textwidth}{\centering \my@title@city@ru\\ \my@title@year@ru}}
+    \cfoot{
+        \large\parbox[b]{
+            \textwidth
+        }{
+            \centering \my@title@city@ru \\ \my@title@year@ru
+        }
+    }
 }
 
 \title{\my@title@title@ru}
