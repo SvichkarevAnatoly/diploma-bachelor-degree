@@ -126,11 +126,11 @@
 \newgeometry{top=20mm,bottom=20mm,left=20mm,right=15mm,nohead,includeheadfoot}
 \thispagestyle{titleru}
 \begin{center}
-    \vspace*{0.25\textheight}
+    \vspace*{0.3\textheight}
     {\Large\my@title@author@ru}
     
     \vskip 2em
-    {\Huge \@title\\}
+    {\Large \@title \\}
     
     \vskip 1em
     \large
