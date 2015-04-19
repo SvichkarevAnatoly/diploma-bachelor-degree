@@ -127,30 +127,17 @@
     {\Huge \@title\\}
     
     \vskip 1em
-    {\large 
-    \ifthenelse{\equal{\my@title@type@ru}{coursework}}
-    {Курсовая работа}
-    {\ifthenelse{\equal{\my@title@type@ru}{diploma}}
-    {ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ БАКАЛАВРСКАЯ РАБОТА}
-    {\ifthenelse{\equal{\my@title@type@ru}{master}}
-    {Магистерская диссертация}
-    {\ifthenelse{\equal{\my@title@type@ru}{bachelor}}
-    {Бакалаврская работа}
-    }}}
-    \\}
+    \large
+    ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ БАКАЛАВРСКАЯ РАБОТА
+    \\
+    
     \vskip 2em
-    \ifthenelse{\equal{\my@title@type@ru}{coursework}}
-    {\normalsize \raggedleft 
-    Научный руководитель:\\
-    \my@title@supervisorPosition@ru\ \my@title@supervisor@ru
-    }
-    {\normalsize \raggedleft 
+    \normalsize \raggedleft 
     «К защите допущена»\\
     Заведующий кафедрой:\\
     \my@title@chairHeadPosition@ru\ \\ \my@title@chairHead@ru\sigspace
     Научный руководитель:\\
     \my@title@supervisorPosition@ru\ \\ \my@title@supervisor@ru\sigspace
-    }
 \end{center}
 \end{titlepage}
 }
