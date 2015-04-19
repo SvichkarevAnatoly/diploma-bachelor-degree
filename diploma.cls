@@ -98,7 +98,6 @@
 \define@key[ru]{mytitle}{chairHeadPosition}{\def\my@title@chairHeadPosition@ru{#1}}
 \define@key[ru]{mytitle}{year}{\def\my@title@year@ru{#1}}
 \define@key[ru]{mytitle}{city}{\def\my@title@city@ru{#1}}
-\define@choicekey*[ru]{mytitle}{type}{diploma,coursework,master,bachelor}{\def\my@title@type@ru{#1}}
 
 \newcommand\filltitle[2]{
     \setkeys[#1]{mytitle}{#2}
