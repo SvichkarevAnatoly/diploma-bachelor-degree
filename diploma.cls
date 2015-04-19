@@ -195,8 +195,5 @@
 \usepackage[nodisplayskipstretch]{setspace}
 \onehalfspacing
 
-%% Переименование "содержания" в "оглавление"
-\gappto\captionsrussian{\renewcommand{\contentsname}{Оглавление}}
-
 \let\savenumberline\numberline
 \def\numberline#1{\savenumberline{#1.}}
