@@ -116,7 +116,7 @@
         \large\parbox[b]{
             \textwidth
         }{
-            \centering \my@title@city@ru \\ \my@title@year@ru
+            \centering \my@title@city@ru , \my@title@year@ru г.
         }
     }
 }
