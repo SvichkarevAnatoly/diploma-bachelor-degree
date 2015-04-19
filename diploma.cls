@@ -137,13 +137,21 @@
     ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ БАКАЛАВРСКАЯ РАБОТА
     \\
     
-    \vskip 2em
-    \normalsize \raggedleft 
-    «К защите допущена»\\
-    Заведующий кафедрой:\\
-    \my@title@chairHeadPosition@ru\ \\ \my@title@chairHead@ru\sigspace
-    Научный руководитель:\\
-    \my@title@supervisorPosition@ru\ \\ \my@title@supervisor@ru\sigspace
+    \vskip 5em
+    \noindent\begin{minipage}[b]{0.49\hsize}
+        \raggedright
+        «К защите допущена» \\
+        Заведующий кафедрой: \\
+        \my@title@chairHeadPosition@ru\ \\
+        \my@title@chairHead@ru\sigspace
+    \end{minipage}
+    \hfill
+    \begin{minipage}[b]{0.49\hsize}
+        \raggedleft
+        Научный руководитель: \\
+        \my@title@supervisorPosition@ru\ \\
+        \my@title@supervisor@ru\sigspace
+    \end{minipage}
 \end{center}
 \end{titlepage}
 }
