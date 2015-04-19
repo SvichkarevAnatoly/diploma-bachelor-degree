@@ -131,7 +131,7 @@
     \ifthenelse{\equal{\my@title@type@ru}{coursework}}
     {Курсовая работа}
     {\ifthenelse{\equal{\my@title@type@ru}{diploma}}
-    {Дипломная работа}
+    {ВЫПУСКНАЯ КВАЛИФИКАЦИОННАЯ БАКАЛАВРСКАЯ РАБОТА}
     {\ifthenelse{\equal{\my@title@type@ru}{master}}
     {Магистерская диссертация}
     {\ifthenelse{\equal{\my@title@type@ru}{bachelor}}
@@ -145,13 +145,11 @@
     \my@title@supervisorPosition@ru\ \my@title@supervisor@ru
     }
     {\normalsize \raggedleft 
-    Допущена к защите.\\
-    Зав. кафедрой:\\
-    \my@title@chairHeadPosition@ru\ \my@title@chairHead@ru\sigspace
+    «К защите допущена»\\
+    Заведующий кафедрой:\\
+    \my@title@chairHeadPosition@ru\ \\ \my@title@chairHead@ru\sigspace
     Научный руководитель:\\
-    \my@title@supervisorPosition@ru\ \my@title@supervisor@ru\sigspace
-    Рецензент:\\
-    \my@title@reviewerPosition@ru\ \my@title@reviewer@ru
+    \my@title@supervisorPosition@ru\ \\ \my@title@supervisor@ru\sigspace
     }
 \end{center}
 \end{titlepage}
