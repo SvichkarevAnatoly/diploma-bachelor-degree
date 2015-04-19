@@ -82,22 +82,17 @@
 %% Параметры заполнения титульного листа
 \usepackage{xkeyval}
 
-%% Русскоязычный вариант
 \define@key[ru]{mytitle}{university}{\def\my@title@university@ru{#1}}
 \define@key[ru]{mytitle}{faculty}{\def\my@title@faculty@ru{#1}}
 \define@key[ru]{mytitle}{chair}{\def\my@title@chair@ru{#1}}
-\define@key[ru]{mytitle}{title}{\def\my@title@title@ru{#1}}
-\define@key[ru]{mytitle}{position}{\def\my@title@position@ru{#1}}
-\define@key[ru]{mytitle}{group}{\def\my@title@group@ru{#1}}
 \define@key[ru]{mytitle}{author}{\def\my@title@author@ru{#1}}
-\define@key[ru]{mytitle}{supervisor}{\def\my@title@supervisor@ru{#1}}
-\define@key[ru]{mytitle}{supervisorPosition}{\def\my@title@supervisorPosition@ru{#1}}
-\define@key[ru]{mytitle}{reviewer}{\def\my@title@reviewer@ru{#1}}
-\define@key[ru]{mytitle}{reviewerPosition}{\def\my@title@reviewerPosition@ru{#1}}
+\define@key[ru]{mytitle}{title}{\def\my@title@title@ru{#1}}
 \define@key[ru]{mytitle}{chairHead}{\def\my@title@chairHead@ru{#1}}
 \define@key[ru]{mytitle}{chairHeadPosition}{\def\my@title@chairHeadPosition@ru{#1}}
-\define@key[ru]{mytitle}{year}{\def\my@title@year@ru{#1}}
+\define@key[ru]{mytitle}{supervisor}{\def\my@title@supervisor@ru{#1}}
+\define@key[ru]{mytitle}{supervisorPosition}{\def\my@title@supervisorPosition@ru{#1}}
 \define@key[ru]{mytitle}{city}{\def\my@title@city@ru{#1}}
+\define@key[ru]{mytitle}{year}{\def\my@title@year@ru{#1}}
 
 \newcommand\filltitle[2]{
     \setkeys[#1]{mytitle}{#2}
